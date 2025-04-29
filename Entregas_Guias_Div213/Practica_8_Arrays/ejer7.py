@@ -52,7 +52,7 @@ def menu_de_opciones():
 
     for i in range(len(country)):
         if country[i] == 'Mexico':
-            datos_usuarios_mexico.append([nombres[i], telefonos[i], mails[i], address[i], postalZip[i], region[i], country[i], edades[i]])
+            datos_usuarios_mexico += [[nombres[i], telefonos[i], mails[i], address[i], postalZip[i], region[i], country[i], edades[i]]]
 
     
 
@@ -61,7 +61,7 @@ def menu_de_opciones():
 
     for i in range(len(country)):
         if country[i] == 'Brazil':
-            datos_usuarios_brasil.append([nombres[i], mails[i], telefonos[i]])
+            datos_usuarios_brasil += [[nombres[i], mails[i], telefonos[i]]]
 
     
 
@@ -71,7 +71,7 @@ def menu_de_opciones():
 
     for i in range(len(edades)):
         if edades[i] <= menor_por_ahora:
-            datos_usuarios_mas_jovenes.append([nombres[i], telefonos[i], mails[i], address[i], postalZip[i], region[i], country[i], edades[i]])
+            datos_usuarios_mas_jovenes += [[nombres[i], telefonos[i], mails[i], address[i], postalZip[i], region[i], country[i], edades[i]]]
 
 
 
@@ -110,7 +110,7 @@ def menu_de_opciones():
 
     for i in range(len(postalZip)):
         if postalZip[i] > 8000 and (country[i] == 'Brazil' or country[i] == 'Mexico'):
-            datos_de_mx_y_br_solicitados.append([nombres[i], telefonos[i], mails[i], address[i], postalZip[i], region[i], country[i], edades[i]])
+            datos_de_mx_y_br_solicitados += [[nombres[i], telefonos[i], mails[i], address[i], postalZip[i], region[i], country[i], edades[i]]]
 
 
 
@@ -119,7 +119,7 @@ def menu_de_opciones():
 
     for i in range(len(country)):
         if country[i] == 'Italy' and edades[i] > 40:
-            datos_de_italianos_requeridos.append([nombres[i], telefonos[i], mails[i]])
+            datos_de_italianos_requeridos += [[nombres[i], telefonos[i], mails[i]]]
     
     
     match opc:
