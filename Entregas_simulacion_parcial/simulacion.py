@@ -8,6 +8,8 @@ mapa = [
  [0, 0, 0, 0, 0],
  [0, 0, 0, 0, 0] ]
 
+
+
 def verificar_tesoro(mapa:list, x:int, y:int) -> int:
     if mapa[x][y] == 1:
         distancia = 0
@@ -18,6 +20,7 @@ def verificar_tesoro(mapa:list, x:int, y:int) -> int:
             distancia = distancia * -1
 
     return distancia
+
 
 
 while continuar and not encontro_el_tesoro:
@@ -35,7 +38,7 @@ while continuar and not encontro_el_tesoro:
 
     if distancia == 0:
         print("¡Encontraste el tesoro!")
-        break
+        encontro_el_tesoro = True
     else:
         print(f"Fallaste. El tesoro está a {distancia} casilleros de distancia.")
 
