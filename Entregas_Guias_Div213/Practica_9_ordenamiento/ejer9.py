@@ -62,7 +62,7 @@ def menu_de_opciones():
             return listar_mexicanos_por_orden()
         
         case 10:
-            return listar_usuarios_jovenes_ordenados()
+             listar_usuarios_jovenes_ordenados()
         
         case 11:
             return mexicanos_y_brasileros_ordenados_por_nombres_y_mayores_a_8000_en_cod_postal()

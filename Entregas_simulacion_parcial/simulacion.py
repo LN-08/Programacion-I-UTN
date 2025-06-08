@@ -22,7 +22,6 @@ def verificar_tesoro(mapa:list, x:int, y:int) -> int:
     return distancia
 
 
-
 while continuar and not encontro_el_tesoro:
 
     coordenada_x = int(input("X: "))

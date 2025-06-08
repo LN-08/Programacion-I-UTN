@@ -5,7 +5,7 @@ def menu_de_opciones():
     opc = 0
     seguir_en_menu = 's'
 
-    while opc != 6 and (seguir_en_menu == 's' or seguir_en_menu == 'S'):
+    while opc != 4 and (seguir_en_menu == 's' or seguir_en_menu == 'S'):
         print("----------------- MENU -----------------")
         print("1 - Reponer mercaderia")
         print("2 - Vender mercaderia")
@@ -19,7 +19,7 @@ def menu_de_opciones():
             print("Numero incorrecto, vuelva a ingresar.")
             opc = int(input("Opcion: "))
     
-
+        
 
         if opc == 1:
                 fila_a_reponer = int(input("Fila a reponer (entre 1 y 4): "))

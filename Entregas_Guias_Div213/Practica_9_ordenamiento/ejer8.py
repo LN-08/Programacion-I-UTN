@@ -243,12 +243,14 @@ def listar_usuarios_jovenes_ordenados()->list:
                 edad_que_va_despues = edadesOrdenadosPorEdades[i]
                 edadesOrdenadosPorEdades[i] = edadesOrdenadosPorEdades[j]
                 edadesOrdenadosPorEdades[j] = edad_que_va_despues
-    
+
+
     usuarios_con_la_edad_menor = []
 
     for i in range(len(usuarios)):
         if edadesOrdenadosPorEdades[i] == edadesOrdenadosPorEdades[0]:
             usuarios_con_la_edad_menor += [[nombres[i], telefonos[i], mails[i], address[i], postalZip[i], region[i], country[i], edades[i]]]
+
 
     return usuarios_con_la_edad_menor
 
